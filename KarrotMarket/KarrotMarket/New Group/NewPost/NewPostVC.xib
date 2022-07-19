@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewPostVC" customModule="KarrotMarket" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="A6e-U3-aAd" id="cYw-CP-wRw"/>
+                <outlet property="mainTextView" destination="oBf-72-eUk" id="98s-qs-ufB"/>
+                <outlet property="priceTextField" destination="c5C-n0-1fG" id="V9m-6Z-Vck"/>
+                <outlet property="saveButton" destination="glo-SH-QVT" id="lXH-dJ-3LT"/>
+                <outlet property="titleTextField" destination="wVb-iz-Puq" id="P4b-7I-1fs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController restorationIdentifier="NewPostVC" title="NewPostVC" nibName="NewPostVC" id="BIy-g5-PH2" customClass="NewPostVC" customModule="KarrotMarket">
+            <view key="view" contentMode="scaleToFill" id="NoK-3D-0iO">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="NewPostVC" id="i5M-Pr-FkT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  글 제목" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVb-iz-Puq">
+                                <rect key="frame" x="30" y="214" width="364" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BVe-G2-9oc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnR-WU-p5I">
+                                <rect key="frame" x="30" y="284" width="364" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="i56-06-a71"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="카테고리 선택">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  가격 (선택사항) " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5C-n0-1fG">
+                                <rect key="frame" x="30" y="354" width="364" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NTn-h5-alQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oBf-72-eUk">
+                                <rect key="frame" x="30" y="429" width="364" height="382"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GyC-zV-qRi">
+                                <rect key="frame" x="0.0" y="826" width="414" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aV1-iG-7kH">
+                                        <rect key="frame" x="10" y="10" width="304" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHb-2p-tVm">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="31"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="doc.badge.plus" catalog="system" title=" 자주쓰는 문구">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdp-ps-abG">
+                                                <rect key="frame" x="147" y="0.0" width="157" height="31"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="slider.horizontal.3" catalog="system" title=" 보여줄 동네 설정">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aV1-iG-7kH" secondAttribute="trailing" constant="100" id="2eV-0y-RB7"/>
+                                    <constraint firstItem="aV1-iG-7kH" firstAttribute="top" secondItem="GyC-zV-qRi" secondAttribute="top" constant="10" id="GJc-9b-pCv"/>
+                                    <constraint firstItem="aV1-iG-7kH" firstAttribute="leading" secondItem="GyC-zV-qRi" secondAttribute="leading" constant="10" id="ioy-ot-jSY"/>
+                                    <constraint firstAttribute="height" constant="70" id="vRa-Lg-W7A"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glo-SH-QVT">
+                                <rect key="frame" x="345.5" y="74" width="48.5" height="31"/>
+                                <color key="tintColor" red="1" green="0.47118077720000001" blue="0.0035893716979999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="완료"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="dHm-aF-hib"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uploadImage" translatesAutoresizingMaskIntoConstraints="NO" id="A6e-U3-aAd">
+                                <rect key="frame" x="20" y="109" width="84" height="86"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNk-aJ-Tvi">
+                                <rect key="frame" x="15" y="136" width="98.5" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98.5" id="2C3-t4-0vY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="OpenImage"/>
+                                <connections>
+                                    <action selector="openImageButtonTapped:" destination="-1" eventType="touchUpInside" id="orD-1d-meS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oBf-72-eUk" secondAttribute="trailing" constant="20" id="0gG-0k-OCh"/>
+                            <constraint firstItem="glo-SH-QVT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="1QU-ba-OPj"/>
+                            <constraint firstItem="UnR-WU-p5I" firstAttribute="top" secondItem="wVb-iz-Puq" secondAttribute="bottom" constant="20" id="3eY-bT-qL2"/>
+                            <constraint firstItem="A6e-U3-aAd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="4Fo-Ye-2Sn"/>
+                            <constraint firstItem="UnR-WU-p5I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="4L1-6F-wAb"/>
+                            <constraint firstItem="c5C-n0-1fG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="67H-ni-vff"/>
+                            <constraint firstItem="aNk-aJ-Tvi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="92" id="8HU-QW-DUK"/>
+                            <constraint firstItem="oBf-72-eUk" firstAttribute="top" secondItem="c5C-n0-1fG" secondAttribute="bottom" constant="25" id="BSJ-WA-AVe"/>
+                            <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wVb-iz-Puq" secondAttribute="trailing" constant="20" id="CiM-xh-Rfx"/>
+                            <constraint firstItem="GyC-zV-qRi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GGJ-hb-iyX"/>
+                            <constraint firstItem="oBf-72-eUk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="KnP-gf-7Ob"/>
+                            <constraint firstAttribute="bottom" secondItem="GyC-zV-qRi" secondAttribute="bottom" id="Lvf-j9-WPa"/>
+                            <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="glo-SH-QVT" secondAttribute="trailing" constant="20" id="ROG-Sp-w9U"/>
+                            <constraint firstItem="c5C-n0-1fG" firstAttribute="top" secondItem="UnR-WU-p5I" secondAttribute="bottom" constant="20" id="SWi-nh-mQ9"/>
+                            <constraint firstItem="wVb-iz-Puq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="XYK-YH-Api"/>
+                            <constraint firstItem="GyC-zV-qRi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aIA-iu-3fT"/>
+                            <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c5C-n0-1fG" secondAttribute="trailing" constant="20" id="evj-i5-rNy"/>
+                            <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UnR-WU-p5I" secondAttribute="trailing" constant="20" id="hql-U3-Obc"/>
+                            <constraint firstItem="wVb-iz-Puq" firstAttribute="top" secondItem="A6e-U3-aAd" secondAttribute="bottom" constant="19" id="i08-ZD-lgW"/>
+                            <constraint firstItem="aNk-aJ-Tvi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="iIU-9v-H8A"/>
+                            <constraint firstItem="A6e-U3-aAd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="65" id="mBQ-hE-ss4"/>
+                            <constraint firstItem="GyC-zV-qRi" firstAttribute="top" secondItem="oBf-72-eUk" secondAttribute="bottom" constant="15" id="pig-Pt-Qgz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="QCC-nU-vlW"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            </view>
+            <point key="canvasLocation" x="-48" y="-320"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="doc.badge.plus" catalog="system" width="119" height="128"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
+        <image name="uploadImage" width="84" height="86"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
